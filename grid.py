@@ -9,12 +9,10 @@ import numpy as np
 # 1 height	
 # http://www.redblobgames.com/grids/hexagons/	
 
-# currently this works for periodic boundaries
-# may modify for normal boundaries
-def generate_grid(nx, ny, w, h):
+def generate_periodic_grid(nx, ny, w, h):
 
 	# length of box on x axis
-	lx = (nx / 2.) * 1.5 * w
+	lx = (nx / 2.) * 1.5 * w 
 
 	# length of box on y axis
 	ly = ny * h 
@@ -26,6 +24,25 @@ def generate_grid(nx, ny, w, h):
 	ys = np.linspace(0., ly, 2 * ny + 1)
 	ys = ys[:-1]  # periodic boundary condition
 
+	xx, yy = np.meshgrid(xs, ys)
+
+	L = np.array((lx,ly))
+
+	return xx, yy, L
+
+def generate_grid(nx, ny, w, h):
+
+	# length of box on x axis
+	lx = (nx / 2.) * 1.5 * w + (w/4.)
+
+	# length of box on y axis
+	ly = ny * h + h/2.
+
+	# generate grid of coordinates
+	xs = np.linspace(0., lx, 3 * nx + 2)
+
+	ys = np.linspace(0., ly, 2 * ny + 2)
+	
 	xx, yy = np.meshgrid(xs, ys)
 
 	L = np.array((lx,ly))
