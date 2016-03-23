@@ -9,7 +9,7 @@ It can be simulated such that there are no boundary conditions or there are peri
 
 |Parameter| Definition| Range |
 |---------|-----------|-------|
-| nx | number of hexagons in x direction | even int |
+| nx | number of hexagons in x direction | even positive int |
 | ny | number of hexagons in y direction | positive int |
 
 
