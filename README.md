@@ -13,7 +13,7 @@ It can be simulated such that there are no boundary conditions or there are peri
 |---------|-----------|-------|
 | nx | number of hexagons in x direction | even positive int |
 | ny | number of hexagons in y direction | positive int |
-| s | side length of hexagon | s defined s.t Area = 1. |
+| s | side length of hexagon | defined s.t. Area = 1 |
 
 
 
