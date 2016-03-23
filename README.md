@@ -5,7 +5,7 @@ Generates a hexagonal flat-topped lattice.
 It can be simulated such that there are no boundary conditions or there are periodic boundary conditions. 
 
 
-<img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/hex_lattice.jpg" style="float: left;" height="400" width="400"><img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/periodic_lattice.jpg" style="float: right;" height="400" width="400">
+<img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/hex_lattice.jpg" style="float: left;" height="400" width="500"><img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/periodic_lattice.jpg" style="float: right;" height="400" width="500">
 
 # Running the simulation
 
