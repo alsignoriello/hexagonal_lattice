@@ -90,7 +90,7 @@ print L
 
 plot_vertices(vertices, "c")
 # plot_edges(vertices, edges, "k", L)
-plot_hexagons(vertices, hexagons, "k", L)
+plot_hexagons(vertices, hexagons, "m", L)
 
 save_plot("periodic_lattice.jpg", L)
 

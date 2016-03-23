@@ -45,7 +45,7 @@ def save_plot(filename, L):
 
 
 	# set axes
-	plt.axis([0, ceil(L[0]), 0, ceil(L[1])])
+	plt.axis([-0.1, ceil(L[0])+0.1, -0.1, ceil(L[1])+0.1])
 
 	# remove tick marks
 	frame = plt.gca()
@@ -73,7 +73,7 @@ print L
 
 plot_vertices(vertices, "c")
 # plot_edges(vertices, edges, "k")
-plot_hexagons(vertices, hexagons, "k")
+plot_hexagons(vertices, hexagons, "m")
 
 save_plot("hex_lattice.jpg", L)
 

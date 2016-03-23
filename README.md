@@ -5,6 +5,12 @@ Generates a hexagonal flat-topped lattice.
 It can be simulated such that there are no boundary conditions or there are periodic boundary conditions. 
 
 
+<!-- <img src="https://github.com/alsignoriello/vicsek_model/blob/master/images/r1.jpg" style="float: left;" height="350" width="400"><img src="https://github.com/alsignoriello/vicsek_model/blob/master/images/r2.jpg" style="float: right;" height="350" width="400">
+
+
+<img src="" >
+<img src="" > -->
+
 # Running the simulation
 
 |Parameter| Definition| Range |

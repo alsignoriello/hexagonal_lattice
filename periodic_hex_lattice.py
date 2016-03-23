@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import numpy as np
 import sys
-from grid import generate_grid
+from grid import generate_periodic_grid
 from trace_periodic import trace_periodic_vertices
 
 nx = int(sys.argv[1])
@@ -22,7 +22,7 @@ h = (3**(0.5) / 2.) * w
 
 
 # generate grid
-xx, yy, L = generate_grid(nx, ny, w, h)
+xx, yy, L = generate_periodic_grid(nx, ny, w, h)
 np.savetxt("L", L)
 # trace hexagons 
 # return vertices and indices in counter clockwise order
