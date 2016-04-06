@@ -1,8 +1,8 @@
 #!/usr/bin/python
 import numpy as np
 import sys
-from grid import generate_periodic_grid
-from trace_periodic import trace_periodic_vertices
+from grid import generate_grid
+from trace import trace_vertices
 
 nx = int(sys.argv[1])
 ny = int(sys.argv[2])
@@ -10,6 +10,7 @@ ny = int(sys.argv[2])
 if nx % 2 != 0:
 	print "Number of hexagons on x axis should be a multiple of 2"
 	nx += 1
+	print "Number of hexagons across x axis is now = %d" % nx
 
 # side length of hexagon such that area = 1
 s = (2)**(0.5) / (3 * (3)**0.5)**(0.5)
@@ -22,17 +23,19 @@ h = (3**(0.5) / 2.) * w
 
 
 # generate grid
-xx, yy, L = generate_periodic_grid(nx, ny, w, h)
+xx, yy, L = generate_grid(nx, ny, w, h)
 np.savetxt("L", L)
+print L
+
 # trace hexagons 
 # return vertices and indices in counter clockwise order
-vertices, indices = trace_periodic_vertices(nx,ny,xx,yy,w,h,L)
+vertices, indices = trace_vertices(nx,ny,xx,yy,w,h,L)
 
 # write vertices
-np.savetxt("periodic_vertices.txt", vertices)
+np.savetxt("vertices.txt", vertices)
 
 # write edges
-f = open("periodic_edges.txt", "w+")
+f = open("edges.txt", "w+")
 for index in indices:
 	for i in range(0,5):
 		i1 = int(index[i])
@@ -44,6 +47,6 @@ for index in indices:
 f.close()
 
 # # write hexagons
-np.savetxt("periodic_hexagons.txt", indices, fmt="%d")
+np.savetxt("hexagons.txt", indices, delimiter="\t", fmt="%d")
 
 

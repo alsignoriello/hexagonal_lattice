@@ -47,6 +47,6 @@ for index in indices:
 f.close()
 
 # # write hexagons
-np.savetxt("hexagons.txt", indices, fmt="%d")
+np.savetxt("hexagons.txt", indices, delimiter="\t", fmt="%d")
 
 
