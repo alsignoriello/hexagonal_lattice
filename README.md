@@ -7,7 +7,7 @@ It can be simulated such that there are no boundary conditions or there are peri
 
 <img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/hex_lattice.jpg" style="float: left;" height="350" width="400"><img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/periodic_lattice.jpg" style="float: right;" height="350" width="400">
 
-# Running the simulation
+# Parameters
 
 |Parameter| Definition| Range |
 |---------|-----------|-------|
@@ -16,6 +16,8 @@ It can be simulated such that there are no boundary conditions or there are peri
 | s | side length of hexagon | defined s.t. Area = 1 |
 
 
+
+# Running the Code
 
 sh run.sh [nx] [ny]
 
