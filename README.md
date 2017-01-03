@@ -4,6 +4,8 @@ Generates a hexagonal flat-topped lattice.
 
 It can be simulated such that there are no boundary conditions or there are periodic boundary conditions. 
 
+In 3D, the hexagons assume a z length of 1.
+
 
 <img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/hex_lattice.jpg" style="float: left;" height="350" width="400"><img src="https://github.com/alsignoriello/hexagonal_lattice/blob/master/images/periodic_lattice.jpg" style="float: right;" height="350" width="400">
 
@@ -13,7 +15,7 @@ It can be simulated such that there are no boundary conditions or there are peri
 |---------|-----------|-------|
 | nx | number of hexagons in x direction | even positive int |
 | ny | number of hexagons in y direction | positive int |
-| s | side length of hexagon | defined s.t. Area = 1 |
+| s | side length of hexagon | defined Area = 1 |
 
 
 

@@ -44,6 +44,11 @@ def plot_hexagons(vertices, hexagons, color, L):
 			x2,y2 = vertices[i2]
 			periodic_plot(x1,y1,x2,y2,color,L)
 
+			# v1 = np.array([x1,y1])
+			# v2 = np.array([x2,y2])
+			# diff = periodic_diff(v1, v2, L)
+			# dist = (diff[0]**2. + diff[1]**2.)**0.5
+
 		i1 = hexagon[-1]
 		i2 = hexagon[0]
 		x1,y1 = vertices[i1]

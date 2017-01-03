@@ -13,7 +13,7 @@ if nx % 2 != 0:
 	print "Number of hexagons across x axis is now = %d" % nx
 
 # side length of hexagon such that area = 1
-s = (2)**(0.5) / (3 * (3)**0.5)**(0.5)
+s = 0.62 #(2)**(0.5) / (3 * (3)**0.5)**(0.5)
 
 # width
 w = 2. * s
